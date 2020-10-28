@@ -2,7 +2,7 @@ import random
 import discord
 from discord.ext import commands
 
-token = "NzcwNjQyOTg1OTY4ODYxMTg2.X5gjNQ.atl911IhF9KThL5DVQAc9eMalIA"
+token = open("token").read()
 intents = discord.Intents.default()
 intents.members = True
 client = commands.Bot(command_prefix=".", intents=discord.Intents.all())
