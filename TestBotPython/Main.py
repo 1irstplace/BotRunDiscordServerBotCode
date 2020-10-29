@@ -2,7 +2,7 @@ import random
 import discord
 from discord.ext import commands
 
-token = open("./token.txt").read()
+token = open("TestBotPython/token.txt").read()
 intents = discord.Intents.default()
 intents.members = True
 client = commands.Bot(command_prefix=".", intents=discord.Intents.all())
@@ -33,7 +33,7 @@ async def ping(ctx):
 
 
 @client.command(aliases=['8ball'])
-async def _8ball(ctx, *, question):
+async def _8ball(ctx, *, question='none'):
     responses = ["It is certain.",
                  "It is decidedly so.",
                  "Without a doubt.",
