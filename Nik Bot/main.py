@@ -18,9 +18,7 @@ async def on_message(message):
     if(message.author != client.user):
         if(chance <= 150 and nimrod_chance >= 6):
             await channel.send(nikword)
-            await channel.send(nikword)
         elif(nimrod_chance <= 6):
-            await channel.send('nimrod')
             await channel.send('nimrod')
         
 
